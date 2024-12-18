@@ -119,6 +119,11 @@ if (!isset($_SESSION['login'])) {
                 <button onclick="window.location.href='questions.php'">Réviser les Questions</button>
                 <button onclick="window.location.href='themes.php'">Gérer les thèmes</button>
             </div>
+            
+            //boutton de déconnexion
+            <div class="bouttondeconexion">                             
+                <button onclick="window.location.href='deconnexion.php'">Déconnexion</button>
+            </div>
         </div>
     </div>
 </body>
