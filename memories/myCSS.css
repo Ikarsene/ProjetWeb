@@ -1,6 +1,6 @@
 /* Body général avec un thème sombre */
 body {
-  background-color: #121212;
+  background-color: #000000 ;
   color: #e0e0e0;
   font-family: Arial, sans-serif;
   margin: 0;
@@ -13,7 +13,7 @@ body {
 
 /* Formulaire avec une taille plus large et sans bordure neon */
 form {
-  background-color: #1e1e1e;
+  background-color: #000000;
   padding: 40px;
   border-radius: 15px;
   width: 400px;  /* Augmenter la largeur pour plus d'espace */
