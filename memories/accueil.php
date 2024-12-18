@@ -9,6 +9,12 @@ if (!isset($_SESSION['login'])) {
 }
 ?>
 
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -30,7 +36,12 @@ if (!isset($_SESSION['login'])) {
             height: 100vh; /* Hauteur de la fenêtre à 100% */
             overflow: hidden; /* Empêche le débordement */
         }
-        
+/*         /*mod* */
+        .dark-mode 
+        {
+            background-color: black; 
+            color: white;
+        }
         /* Style du conteneur principal */
         .container {
             width: 100%; /* Utilise toute la largeur disponible */
@@ -118,6 +129,7 @@ if (!isset($_SESSION['login'])) {
                 <button onclick="window.location.href='ajouter_utilisateur.php'">Ajouter un Utilisateur</button>
                 <button onclick="window.location.href='questions.php'">Réviser les Questions</button>
                 <button onclick="window.location.href='themes.php'">Gérer les thèmes</button>
+                <button onclick="myFunction()">Toggle dark mode</button>
             </div>
             
             //boutton de déconnexion
